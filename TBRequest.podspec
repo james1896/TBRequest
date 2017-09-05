@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "TBCommon"
+  s.name         = "TBRequest"
   s.version      = "0.0.1"
   s.summary      = "1"
 
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = '3232332'
 
-  s.homepage     = "https://github.com/james1896/TBCommon"
+  s.homepage     = "https://github.com/james1896/TBRequest"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/james1896/TBCommon.git", :tag => s.version, :submodules => true }
+  s.source       = { :git => "https://github.com/james1896/TBRequest.git", :tag => s.version, :submodules => true }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,8 +88,9 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-      s.subspec 'TBCommon' do |ss|
-      ss.source_files = 'common/*.{h,m}'
+      s.subspec 'TBRequest' do |ss|
+      ss.source_files = '*.{h,m}'
+#       s.dependency "AFNetworking", "~> 3.1"
    
 #     ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
 #     ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
