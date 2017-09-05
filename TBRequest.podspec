@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #
       s.subspec 'TBRequest' do |ss|
       ss.source_files = '*.{h,m}'
-#       s.dependency "AFNetworking", "~> 3.1"
+      s.dependency "AFNetworking", "~> 3.1"
    
 #     ss.public_header_files = 'AFNetworking/AFURL{Request,Response}Serialization.h'
 #     ss.watchos.frameworks = 'MobileCoreServices', 'CoreGraphics'
